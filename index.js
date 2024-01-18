@@ -16,7 +16,7 @@ function showpopup(){
 
 }
 function closepopup(){
-    popup.style.bottom = "-5000%";
+    popup.style.bottom = "-100%";
     
     popupCont.style.display = "none";
 

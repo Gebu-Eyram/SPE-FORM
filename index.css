@@ -323,43 +323,34 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: none;
+    width: 100%;
 }
 .popup{
     background: rgba(255, 255, 255, .875);
+    position: fixed;
     padding: 50px 20px 20px;
     border-radius: 10px;
-    min-width: 80%;
+    min-width: 40%;
     display: flex;
     flex-direction: column;
-    transition: all 0.5s ease-in;
+    transition: all 0.8s ease-in;
     align-items: center;
-    bottom: -20%;
+    bottom: -100%;
     text-align: center;
     margin: 0 auto;
-    position: absolute;
-    bottom: 30%;
-    transform: translateX(50%);
-  
+    min-width: 80%;
+
 }
 .popup h2{
-    color: #1e3250;
+    color: #0067B1;
     margin-bottom: 10px;
-    font-size: .9em;
+    font-size: 1em;
 }
 .popup button{
     transition: all 0.2s ease-in;
     padding: 10px 30px;
-    border: solid 1px #0067B1;
-    font-weight: 300;
     border-radius: 5px;
+    border: solid 1px #0067B1;
 }
 .popup button:hover{
     background-color: #0067B1;
