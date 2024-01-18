@@ -38,7 +38,6 @@ body{
     border-bottom: -20px;
 }
 .header p{
-    letter-spacing: 3px;
     font-size: 1.2rem;
 }
 
@@ -46,7 +45,7 @@ body{
     max-width: 650px;
     text-align: center;
     margin-top: 5px;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 .otherSide{
     position: absolute;
@@ -57,7 +56,7 @@ body{
     align-items: center;
 }
 .otherSide p{
-    font-size: .7em;
+    font-size: .9em;
     margin-bottom: 10px;
 }
 
@@ -247,6 +246,8 @@ form{
     html{
        font-size: 80%;
     }   
+    header .description{
+        max-width: 550px};
 }
 @media only screen and (max-width: 770px){
     .headerPage h1{
@@ -260,7 +261,9 @@ form{
     html{
        font-size: 75%;
     } 
-
+    
+    header .description{
+        max-width: 350px};
     .textPart p{
         font-size: .8em;
         max-width: 300px;
@@ -280,6 +283,9 @@ form{
         .benefits ul li p{
             max-width: 230px;
         }
+        
+    header .description{
+        max-width: 250px};
     }
     .headerPage h1{
         font-size: 100%;
@@ -340,6 +346,7 @@ form{
     margin: 0 auto;
     position: absolute;
     bottom: 30%;
+    transform: translateX(50%);
   
 }
 .popup h2{

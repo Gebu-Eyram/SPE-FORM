@@ -32,8 +32,6 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        popup.style.bottom = "30%";
-        popupCont.style.display = "initial";
         setTimeout(() => {
             popup.style.bottom = "30%";
             popupCont.style.display = "initial";
