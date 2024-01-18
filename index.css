@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+}
+
+
+  
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #1E2F97), url('images/zoomed.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header h1{
+    font-size: 6rem;
+    font-family: "Kaushan Script";
+    border-bottom: -20px;
+}
+.header p{
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+
+.header .description{
+    max-width: 650px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: .7rem;
+}
+.otherSide{
+    position: absolute;
+    bottom: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.otherSide p{
+    font-size: .7em;
+    margin-bottom: 10px;
+}
+
+.otherSide button{
+    border-radius: 3px;
+    padding: 8px 15px;
+    color: white;
+    background: transparent;
+    border: solid 1px white;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    z-index: 2;
+}
+
+.otherSide button::after{
+    position: absolute;
+    content: "";
+    background-color: white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    transition: all .3s ease-in;
+}
+
+.otherSide button:hover{
+    color: black;
+    background-color: white;    
+}
+
+.form-side{
+padding: 50px 80px;
+}
+
+.headerPage{
+    min-width: 100vw;
+    min-height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #1E2F97), url('images/IMG-20240117-WA0040.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.headerPage h1{
+    font-size: 2.3em;
+}
+
+.container{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.left img{
+    height:200px;
+    width: 400px;
+    object-fit: contain;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.textPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.textPart p{
+    font-size: .9em;
+    text-align: center;
+    color: rgb(128, 125, 168);
+    width: 100%;
+    max-width: 400px;
+}
+
+.benefits{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits h1{
+    color: #0067B1;
+}
+
+
+.benefits ul li{
+    flex: 1;
+    max-width: 500px;
+    list-style: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5PX 5PX 20PX 1PX rgba(18, 54, 173, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.benefits ul li span{
+    font-size: 1.3em;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    background: #0067B1;
+    color: white;
+}
+
+.benefits ul li p{
+    font-size: .9em;
+    padding: 10px;
+    max-width: 380px;
+    text-align: center;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    text-align: center;
+    padding: 10px;
+    
+    padding-top: 20px;
+}
+
+.right h1{
+    color: #0067B1;
+    text-align: center;
+}
+input,select{
+    background: lightgray;
+    border-radius: 40px;
+    width: 100%;
+    padding: 10px 20px;
+    max-width: 350px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+option{
+    max-height: 60px;
+}
+.right label span{
+    color: red;
+
+    
+}
+
+@media only screen and (max-width: 1024px){
+ html{
+    font-size: 90%;
+ }   
+}
+
+form{
+    padding: 10px;
+    box-shadow: 5PX 5PX 20PX 1PX rgba(18, 54, 173, 0.1);
+    
+}
+
+@media only screen and (max-width: 770px){
+    html{
+       font-size: 80%;
+    }   
+}
+@media only screen and (max-width: 770px){
+    .headerPage h1{
+       font-size: 120%;
+    }   
+
+}
+
+
+@media only screen and (max-width: 450px){
+    html{
+       font-size: 75%;
+    } 
+
+    .textPart p{
+        font-size: .8em;
+        max-width: 300px;
+
+    }
+    
+    .benefits ul li span{
+        height: 35px;
+        width: 35px;
+    }
+
+    .benefits ul li p{
+        max-width: 300px;
+    }
+    
+    @media only screen and (max-width: 350px){
+        .benefits ul li p{
+            max-width: 230px;
+        }
+    }
+    .headerPage h1{
+        font-size: 100%;
+     }  
+
+    .textPart p{
+        font-size: .8em;
+        max-width: 250px;
+
+    }
+
+}
+
+.btn-submit{
+    background-color: #0067B1;
+    color: white;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+
+form{
+    padding: 30px 30px;
+    max-width: 450px;
+    min-width: 250px;
+}
+
+.right{
+    max-width: 400px;
+}
+
+.popupcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: none;
+}
+.popup{
+    background: rgba(255, 255, 255, .875);
+    padding: 50px 20px 20px;
+    border-radius: 10px;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+    align-items: center;
+    bottom: -20%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30%;
+  
+}
+.popup h2{
+    color: #1e3250;
+    margin-bottom: 10px;
+    font-size: .9em;
+}
+.popup button{
+    transition: all 0.2s ease-in;
+    padding: 10px 30px;
+    border: solid 1px #0067B1;
+    font-weight: 300;
+    border-radius: 5px;
+}
+.popup button:hover{
+    background-color: #0067B1;
+    color: white;
+}

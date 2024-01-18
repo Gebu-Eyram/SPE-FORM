@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="headerPage">
+        <h1>Committee Membership Registration</h1>
+    </div>
+    
+    <div class="container">
+        <div class="left">
+            <img src="images/speandknust.jpg" alt="">
+
+            <div class="textPart">
+                <p>Be a member of the various committees and be in the driving seat of decisions in the society. <br> We can't wait for you to join us!</p>
+            </div>
+
+            <div class="benefits">
+                <h1>Benefits</h1>
+                <ul>
+                    <li>
+                        <span>1</span>
+                        <p>Receive a certificate from SPE Ghana Section.</p>
+                    </li>
+
+                    <li>
+                        <span>2</span>
+                        <p>Enhance your leadership skills.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span>3</span>
+                        <p>
+                            Influence SPE programs and activities with your knowledge and experience.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span>4</span>
+                        <p>
+                            Meet and work with other members near you and around the globe.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Enter your details</h1>
+
+            <form name="submit-to-google-sheet">
+                
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" required name="Name" placeholder="Eg. Abdul Razak">
+
+                    <label for="program">Program of study <span> *</span></label>
+                    <select id="options" required name="program">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="Agricultural Engineering">Agricultural Engineering</option>
+                        <option value="Automobile Engineering">Automobile Engineering</option>
+                        <option value="Biomedical Engineering">Biomedical Engineering</option>
+                        <option value="Chemical Engineering">Chemical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Computer Engineering">Computer Engineering</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Geological Engineering">Geological Engineering</option>
+                        <option value="Geomatic Engineering">Geomatic Engineering</option>                        <option value="Industrial Engineering">Industrial Engineering</option>
+                        <option value="Marine Engineering">Marine Engineering</option>
+                        <option value="Materials Engineering">Materials Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        
+                        <option value="Metallurgical Engineering">Metallurgical Engineering</option>
+                        <option value="Petrochemical Engineering">Petrochemical Engineering</option>
+                        <option value="Petroleum Engineering">Petroleum Engineering</option>
+                        <option value="Telecommunication Engineering">Telecommunication Engineering</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                    <label for="level">Current level<span> *</span></label>
+                    <select id="options" required name="level">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                    </select>
+                    
+
+
+
+                    <label for="committee">What committee do you want to join? <span>*</span></label>
+                    <select id="options" required name="committee">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="Membership Committee">Membership Committee</option>
+                        <option value="Programs Committee">Programs Committee</option>
+                        <option value="Treasury Committee">Treasury Committee</option>
+                        <option value="Publicity Committee">Publicity Committee</option>
+                        <option value="Technology and Innovations Committee">Technology and Innovations Committee</option>
+                    </select>
+                    
+                    
+                    <label>Contact <span>*</span></label>
+                    <input type="text" required name="Contact" placeholder="Eg. 0501110000">
+                    
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" required name="email" placeholder="Eg. speknust1@gmail.com">
+
+                                        
+                    <label>SPE Membership ID <span>*</span></label>
+                    <input type="text" maxlength="7" required name="Membership" >
+
+                    <br>
+                    <button type="submit" class="btn-submit">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    
+
+                    </form>
+        </div>
+    </div>
+
+    
+   <section class="popupcontainer">
+    <div class="popup">
+        <h2>We have received your successfully!</h2>
+        <button class="okay">Ok</button>
+       </div>
+   </section>
+
+<script src="index.js"></script>
+</body>
+</html>
